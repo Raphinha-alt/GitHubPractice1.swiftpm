@@ -28,8 +28,9 @@ struct ContentView: View {
             answer = (number1 * number2)
             
         }
+               
                ,label: {
-            Text("Got Answer ")
+            Text("Got Answer")
                 .frame(width: 400,height: 30,alignment: .center)
                 .font(.largeTitle)
                 .background(.red)
