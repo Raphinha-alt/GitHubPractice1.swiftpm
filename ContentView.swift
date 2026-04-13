@@ -5,7 +5,7 @@ struct ContentView: View {
     @State var number2 = 0
     @State var answer = 0
     var body: some View {
-    
+        
         
         Text("Andrew")
         Text("Zahra")
@@ -22,14 +22,14 @@ struct ContentView: View {
                 .multilineTextAlignment(.center)
             
             Text("=")
-        Button(action: {
-            answer = (number1 * number2)
-            
             Text("\(answer)")
         }
-        
-        },label: {
-            Text("Got Answer ")
+        Button(action: {
+            answer = (number1 * number2)
+        }
+               
+               ,label: {
+            Text("Got Answer")
                 .frame(width: 400,height: 30,alignment: .center)
                 .font(.largeTitle)
                 .background(.red)
